@@ -31,10 +31,10 @@ const Links = () => {
 
     const items = [
         "Homepage",
-        "Services",
-        "Portfolio",
-        "Contact",
-        "About"
+        "About",
+        "Skills",
+        "Projects",
+        "Contact"
     ]
 
   return (

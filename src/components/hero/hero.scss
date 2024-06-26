@@ -16,8 +16,8 @@
             flex-direction: column;
             justify-content: center;
             gap: 20px;
-            // z-index: 9;
-            // position: absolute;
+            z-index: 5;
+            position: absolute;
 
             h2{
                font-size: 30px;
@@ -54,6 +54,7 @@
         position: absolute;
         top: 0;
         right: 0;
+        padding-right: 130px;
     }
 
     .slidingTextContainer{
@@ -62,6 +63,8 @@
         bottom: -100px;
         white-space: nowrap; //To make the back text appear in a single line
         color: #ffffff09;
+        width: 50%;
+        font-weight: bold;
     }
 
     #heroimg{

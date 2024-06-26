@@ -1,0 +1,95 @@
+.parallax{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: linear-gradient(180deg, #111132, #505064);
+
+    .container{
+        display: flex;
+        width: 700px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        position: absolute;
+        z-index: 6;
+        border:2px solid #fc7b54;
+        padding : 20px;
+        border-radius: 20px;
+        // background-color: #0c0c1d;
+        background-color: transparent;
+        animation-name: identifier;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+
+        .text{
+            font-size: 20px;
+            font-weight: 300;
+            color: #fdc4b2;
+        }
+    }
+
+    h1{
+        font-size: 40px;
+        // z-index: 3;
+        color: #aa9bd1;
+    }
+
+    .mountains{
+        background-image: url("/mountains.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 4;
+    }
+
+    .planets{
+        background-image: url("/sun.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .stars{
+        background-image: url("/stars.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+
+@keyframes identifier {
+    0%{
+        border-color: rgb(255, 109, 109);
+        // box-shadow: 5px 1px 10px 10px red;
+    } 
+    25%{
+        border-color: rgb(253, 253, 84);
+        // box-shadow: 5px 1px 10px 10px yellow;
+    } 
+    50%{
+        border-color: rgb(190, 108, 232);
+        // box-shadow: 5px 1px 10px 10px palevioletred;
+    } 
+    75%{
+        border-color: rgb(248, 195, 96);
+        // box-shadow: 5px 1px 10px 10px orange;
+    }
+    100%{
+        border-color: rgb(188, 247, 100);
+        // box-shadow: 5px 1px 10px 10px greenyellow;
+    }
+}
